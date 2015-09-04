@@ -1,0 +1,13 @@
+source 'https://rubygems.org'
+
+gem 'praxis', git:"https://github.com/rightscale/praxis.git"
+gem 'rack', '~> 1.0'
+gem 'rake'
+gem 'dnsmadeeasy-rest-api'
+gem 'pry'
+gem 'pry-byebug'
+gem 'thin'
+
+group :development, :test do
+  gem 'rspec'
+end
