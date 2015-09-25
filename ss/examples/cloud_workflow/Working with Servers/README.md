@@ -1,4 +1,4 @@
-## Manual Server Manipulation
+## Working with Servers
 
 These definitions are useful when manually manipulating Server declarations. Usually, a server is launched using the `provision()` function, but sometimes you may need to manually launch a server. 
 
