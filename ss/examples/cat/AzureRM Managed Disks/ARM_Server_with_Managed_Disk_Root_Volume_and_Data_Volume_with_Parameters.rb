@@ -38,21 +38,21 @@ end
 ###################
 
 parameter "param_cloud" do
-    type "string"
-    label "Cloud Region"
-    category "Cloud"
-    description "What cloud/region to use"
-    allowed_values "AzureRM East US","AzureRM West US"
-    default "AzureRM West US"
+  type "string"
+  label "Cloud Region"
+  category "Cloud"
+  description "What cloud/region to use"
+  allowed_values "AzureRM East US","AzureRM West US"
+  default "AzureRM West US"
 end
 
 parameter "param_operating_system" do
-    type "string"
-    label "Base Operating System"
-    category "Server"
-    description "What operating system type to use"
-    allowed_values "Windows", "Linux"
-    default "Linux"
+  type "string"
+  label "Base Operating System"
+  category "Server"
+  description "What operating system type to use"
+  allowed_values "Windows", "Linux"
+  default "Linux"
 end
 
 parameter "param_server_name" do
@@ -72,20 +72,20 @@ parameter "param_instance_type" do
 end
 
 parameter "param_volume_type" do
-    type "string"
-    label "Type of Root and Data Volume"
-    category "Volumes"
-    description "The type of volume to use for the Root and Data volumes"
-    allowed_values "Standard_LRS", "Premium_LRS"
-    default "Standard_LRS"
+  type "string"
+  label "Type of Root and Data Volume"
+  category "Volumes"
+  description "The type of volume to use for the Root and Data volumes"
+  allowed_values "Standard_LRS", "Premium_LRS"
+  default "Standard_LRS"
 end
 
 parameter "param_volume_size" do
-    type "number"
-    label "Size of Data Volume(GB)"
-    category "Volumes"
-    description "The size of the Data volume in GB"
-    default "10"
+  type "number"
+  label "Size of Data Volume(GB)"
+  category "Volumes"
+  description "The size of the Data volume in GB"
+  default "10"
 end
 
 ###################
