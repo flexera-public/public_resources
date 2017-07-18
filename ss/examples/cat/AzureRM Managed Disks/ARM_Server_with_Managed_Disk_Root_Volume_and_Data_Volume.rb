@@ -36,24 +36,3 @@ resource "volume_attachment", type: "volume_attachment" do
     "delete_on_termination" => "true"
   } end
 end
-
-
-###################
-# Operations      #
-###################
-operation "launch" do
-  description "Launch the server"
-  definition "launch_me"
-end
-
-
-###################
-# Definitions     #
-###################
-define launch_me(@server, @volume, @volume_attachment) return @server, @volume, @volume_attachment do
-
-  provision(@server)
-  provision(@volume)
-  provision(@volume_attachment)
-
-end

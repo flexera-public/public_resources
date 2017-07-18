@@ -19,22 +19,3 @@ resource "server", type: "server" do
     "root_volume_type_uid" => "Standard_LRS"
   } end
 end
-
-
-###################
-# Operations      #
-###################
-operation "launch" do
-  description "Launch the server"
-  definition "launch_me"
-end
-
-
-###################
-# Definitions     #
-###################
-define launch_me(@server) return @server do
-
-  provision(@server) 
-
-end
