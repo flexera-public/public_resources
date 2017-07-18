@@ -16,7 +16,7 @@ resource "server", type: "server" do
   security_groups "SecurityGroup_1"
   associate_public_ip_address "false"
   cloud_specific_attributes do {
-    "root_volume_type_uid" => "Standard_LRS"
+    "root_volume_type_uid" => "Standard_LRS" #Possible values: Standard_LRS, Premium_LRS
   } end
 end
 
