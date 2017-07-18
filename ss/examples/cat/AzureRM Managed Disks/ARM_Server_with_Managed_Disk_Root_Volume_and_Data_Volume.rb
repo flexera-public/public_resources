@@ -10,8 +10,8 @@ resource "server", type: "server" do
   name "MDServer2"
   server_template find("RightLink 10.6.0 Linux Base")
   cloud "AzureRM West US"
-  network find("Network_1")
-  subnets find("Subnet_1")
+  network "Network_1"
+  subnets "Subnet_1"
   instance_type "Standard_DS2_v2"
   security_groups "SecurityGroup_1"
   associate_public_ip_address "false"
